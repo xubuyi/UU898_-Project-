@@ -1,7 +1,7 @@
 /* jshint esversion:6 */
 // 1 引入express模块
 const express=require("express");
-
+const UserRouter=require("./routers/register")
 // 2 创建web服务器
 var server=express();
 
@@ -26,3 +26,4 @@ server.listen(3000);
 
 // 5 挂载静态资源目录
 server.use(express.static("public"));
+server.use("/reg",UserRouter);
