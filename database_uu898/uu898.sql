@@ -7,7 +7,7 @@ create database uu charset utf8;
 use uu;
 #创建表
 #用户列表
-create table uu_uesr_list(
+create table uu_user_list(
 	uid int primary key auto_increment,
 	uname char(32) unique,
 	upwd char(32),
@@ -20,12 +20,14 @@ create table uu_uesr_list(
 	bank varchar(32)
 );
 
+INSERT INTO uu_user_list VALUES(null,"tom",md5('123'),"1.jpg","tom1","13415614561","a1@163.com","110241199011011156","1235641","建行");
+
 #游戏类型
 create table game_list(
 	gid int primary key auto_increment,
 	gneme varchar(10),
 	gtype varchar(8)
-)
+);
 
 
 
@@ -40,8 +42,5 @@ create table uu_product_list(
 	p_count bigint,
 	is_sale char(8),
 	gid int,
-	uid int,
-	foreign key(uid) references user_list(uid),
-	foreign key(gid) references game_list(gid)
-
+	uid int
 )
