@@ -13,6 +13,7 @@ create table uu_user_list(
 	upwd char(32),
 	upic varchar(64),
 	user_name varchar(32),
+	sex int,
 	tel char(11),
 	email varchar(32),
 	ID_card bigint,
@@ -20,7 +21,8 @@ create table uu_user_list(
 	bank varchar(32)
 );
 
-INSERT INTO uu_user_list VALUES(null,"tom",md5('123'),"1.jpg","tom1","13415614561","a1@163.com","110241199011011156","1235641","建行");
+INSERT INTO uu_user_list VALUES(null,"tom",md5('123'),"1.jpg","tom",1,"13415614561","a1@163.com","110241199011011156","1235641","建行");
+INSERT INTO uu_user_list VALUES(null,"jerry",md5('123'),"1.jpg","jerry",0,"13415614561","a1@163.com","110241199011011156","1235641","建行");
 
 #游戏类型
 create table game_list(
