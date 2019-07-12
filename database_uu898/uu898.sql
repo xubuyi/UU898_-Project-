@@ -45,4 +45,4 @@ create table uu_product_list(
 	is_sale char(8),
 	gid int,
 	uid int
-)
+);
