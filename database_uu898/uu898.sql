@@ -27,8 +27,8 @@ INSERT INTO uu_user_list VALUES(null,"jerry",md5('123'),"1.jpg","jerry",0,"13415
 #游戏类型
 create table game_list(
 	gid int primary key auto_increment,
-	gneme varchar(10),
-	gtype varchar(8)
+	gneme varchar(16),
+	gtype varchar(16)
 );
 
 
