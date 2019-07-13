@@ -1,10 +1,11 @@
 /*jshint esversion: 6 */
-import Vue from 'vue'
-import Router from 'vue-router'
-import Home from './views/Home.vue'
-import test from './views/test.vue'
+import Vue from 'vue';
+import Router from 'vue-router';
+import Home from './views/Home.vue';
+import test from './views/test.vue';
+import deal from './components/common/index/deal.vue';
 
-Vue.use(Router)
+Vue.use(Router);
 
 export default new Router({
   routes: [
@@ -12,6 +13,10 @@ export default new Router({
       path: '/',
       component:test
     },
+  {
+    path:"/deal",
+    component:deal
+  },
     {
       path: '/about',
       name: 'about',
