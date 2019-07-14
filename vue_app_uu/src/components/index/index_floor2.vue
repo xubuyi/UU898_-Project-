@@ -12,9 +12,8 @@
             <li class="nav-item txt">
               <span>游戏名称</span>
               <i class="i_pic"></i>
-              <div></div>
             </li>
-            <li class="nav-item txt">
+            <li class="nav-item txt"> 
               <span>游戏大区</span>
               <i class="i_pic"></i>
             </li>
@@ -45,22 +44,22 @@
           <ul class="rmyx_list hlse nav" id="topgames1">
             <li class="nav-item">
               <a href="javascript:;" title="地下城与勇士" class="hotGameClr">
-                <img src="../../img/wym_05.jpg" alt="热门游戏列表" />地下城与勇士
+                <img src="../../img/index/wym_05.jpg" alt="热门游戏列表" />地下城与勇士
               </a>
             </li>
             <li class="nav-item">
               <a href="javascript:;" title="剑灵">
-                <img src="../../img/wym_05.jpg" alt="热门游戏列表" />剑灵
+                <img src="../../img/index/wym_05.jpg" alt="热门游戏列表" />剑灵
               </a>
             </li>
             <li class="nav-item">
               <a href="javascript:;" title="天涯明月刀" class="hotGameClr">
-                <img src="../../img/wym_05.jpg" alt="热门游戏列表" />天涯明月刀
+                <img src="../../img/index/wym_05.jpg" alt="热门游戏列表" />天涯明月刀
               </a>
             </li>
             <li class="nav-item">
               <a href="javascript:;" title="冒险岛2">
-                <img src="../../img/wym_05.jpg" alt="热门游戏列表" />冒险岛2
+                <img src="../../img/index/wym_05.jpg" alt="热门游戏列表" />冒险岛2
               </a>
             </li>
           </ul>
@@ -82,7 +81,9 @@
 <script>
 export default {
   data() {
-    return {};
+    return {
+     
+    }
   },
   methods: {}
 };
@@ -118,7 +119,7 @@ a {
 }
 /*小图标引入标签*/
 .i_pic {
-  background: url("../../img/index_bg.png");
+  background: url("../../img/index/index_bg.png");
 }
 /*内容样式区*/
 .container {
@@ -133,7 +134,7 @@ a {
   width: 100%;
   /* position: relative; */
   height: 50px;
-  background: url("../../img/colum-bg.jpg") center center;
+  background: url("../../img/index/colum-bg.jpg") center center;
 }
 /*二楼导航左内容区*/
 .container .floor2 .f2_nav .lt {
@@ -200,18 +201,21 @@ a {
   display: inline-block;
   border-radius: 3px;
 }
+.container .floor2 .f2_nav .rt .nav li a:hover{
+  background: #eb7d29;
+}
 /*选项样式*/
 .floor2 .yxmc{
   width: 1196px;
   height:81px;
-  display:none;
+  /* display:none; */
   border: #00b0ff 2px solid;
   background: #fff;
   position: absolute;
   top: 50px;
   left: 0;
   z-index: 9999;
-  box-shadow: 0 0 2px #b9b9b9;
+  box-shadow: 0 0 1px #b9b9b9;
 }
 
 </style>
