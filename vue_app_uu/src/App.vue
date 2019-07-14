@@ -13,6 +13,10 @@
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+<<<<<<< HEAD
+=======
+  /* text-align: center; */
+>>>>>>> cf078993f412f4ec99b7278e8bb6942d5700de06
   color: #2c3e50;
 }
 #nav {
