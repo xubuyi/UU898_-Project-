@@ -3,7 +3,7 @@
       <div class="top_2">
          <table></table>
          <div>
-            <img src="../../assets/img/index/xzyx_logo.jpg" alt="">
+            <img src="../../img/index/xzyx_logo.jpg" alt="">
          </div>
          <div>
             <a href="#">精确搜索</a>
@@ -50,7 +50,7 @@
    body,div,p,ul,li{margin:0;padding:0}
    a{text-decoration: none;color:#666;}
    .pic{
-    background: url("../../assets/img/index/header.png") no-repeat; 
+    background: url("../../img/index/header.png") no-repeat; 
    }
    .top_2{
       width:1200px;

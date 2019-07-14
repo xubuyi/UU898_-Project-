@@ -65,7 +65,7 @@
           <a href="#"> 关注UU898</a>
           <span class="pic"></span>
           <div class="code">
-            <img src="../../assets/img/index/uu898weixin.jpg" alt="">
+            <img src="../../img/index/uu898weixin.jpg" alt="">
           </div>
         </li> 
       </ul>
@@ -83,7 +83,7 @@
   body,div,p,ul,li{margin:0;padding:0}
   a{text-decoration: none;color:#666;}
   .pic{
-    background: url("../../assets/img/index/header.png") no-repeat; 
+    background: url("../../img/index/header.png") no-repeat; 
   }
   .top{
     position: relative;
