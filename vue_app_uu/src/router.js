@@ -4,11 +4,15 @@ import Router from 'vue-router';
 import Home from './views/Home.vue';
 import test from './views/test.vue';
 import deal from './components/common/index/deal.vue';
+import index_header_1 from "./components/index/index_header_1.vue";
+import index_header_2 from "./components/index/index_header_2.vue";
 
 Vue.use(Router);
 
 export default new Router({
   routes: [
+    {path:"/index_header_1",component:index_header_1},
+    {path:"/index_header_2",component:index_header_2},
     {
       path: '/',
       component:test
