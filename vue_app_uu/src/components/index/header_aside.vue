@@ -1,16 +1,16 @@
 <template>
   <div>
-    <div>
+    <div class="lists" @mouseenter="enter" @mouseleave="leave">
       <!-- 游戏列表 -->
-      <ul @mouseenter="enter" @mouseleave="leave">
+      <ul>
         <li>
           <span class="my_img"></span>
           <span>热门游戏</span>
         </li>
-        <li>
-          <span>剑灵</span>
+        <li v-for="(item,i) of gamne_list" :key="i">
+          <span>{{item}}</span>
         </li>
-        <li>天涯明月刀</li>
+        <!-- <li>天涯明月刀</li>
         <li>地下城与勇士</li>
         <li>流放之路</li>
         <li>诛仙3</li>
@@ -18,72 +18,41 @@
         <li>古剑奇谭网络版</li>
         <li>灵山奇缘</li>
         <li>传奇永恒</li>
-        <li>笑傲江湖OL</li>
+        <li>笑傲江湖OL</li> -->
         <li>更多游戏>></li>
-        <div v-show="my_first">
-          <!-- 类型 -->
-          <ul class="my_type">
-            <li @click="qq">
-              <span>游戏账号</span>
-            </li>
-            <li>太阳账号</li>
-            <li>游戏币</li>
-            <li>装备</li>
-            <li>其他</li>
-            <li>游戏礼包</li>
-            <li>商城道具</li>
-            <li>点券</li>
-            <li>祝福酒</li>
+      </ul>
+      <div v-show="my_first" class="options">
+        <!-- 类型 -->
+        <ul class="my_type " >
+          <li @click="qq" v-for="(list,i) of game_type" :key="i">
+            <span>{{list}}</span>
+          </li>
+          <!-- <li>太阳账号</li>
+          <li>游戏币</li>
+          <li>装备</li>
+          <li>其他</li>
+          <li>游戏礼包</li>
+          <li>商城道具</li>
+          <li>点券</li>
+          <li>祝福酒</li> -->
+        </ul>
+        <div v-show="c">
+          <!-- 区服 -->
+          <ul>
+            <li>一区</li>
+            <li>二区</li>
+            <li>三区</li>
+            <li>四区</li>
+            <li>五区</li>
+            <li>六区</li>
+            <li>七区</li>
+            <li>八区</li>
+            <li>九区</li>
+            <li>十区</li>
           </ul>
-          <div v-show="c">
-            <!-- 区服 -->
-            <ul>
-              <li>一区</li>
-              <li>二区</li>
-              <li>三区</li>
-              <li>四区</li>
-              <li>五区</li>
-              <li>六区</li>
-              <li>七区</li>
-              <li>八区</li>
-              <li>九区</li>
-              <li>十区</li>
-            </ul>
-          </div>
         </div>
-      </ul>
+      </div>
     </div>
-    <!-- <div v-show="my_first"> -->
-    <!-- 类型 -->
-    <!-- <ul class="my_type">
-        <li @click="qq">
-          <span>游戏账号</span>
-        </li>
-        <li>太阳账号</li>
-        <li>游戏币</li>
-        <li>装备</li>
-        <li>其他</li>
-        <li>游戏礼包</li>
-        <li>商城道具</li>
-        <li>点券</li>
-        <li>祝福酒</li>
-      </ul>
-    </div>-->
-    <!-- <div v-show="c"> -->
-      <!-- 区服 -->
-      <!-- <ul>
-        <li>一区</li>
-        <li>二区</li>
-        <li>三区</li>
-        <li>四区</li>
-        <li>五区</li>
-        <li>六区</li>
-        <li>七区</li>
-        <li>八区</li>
-        <li>九区</li>
-        <li>十区</li>
-      </ul>
-    </div> -->
   </div>
 </template>
 
@@ -92,7 +61,9 @@ export default {
   data() {
     return {
       my_first: false,
-      c: false
+      c: false,
+      gamne_list:["剑灵","天涯明月刀","地下城与勇士","流放之路","诛仙3","诺亚传说","  古剑奇谭网络版","灵山奇缘","传奇永恒","笑傲江湖OL"],
+      game_type:["游戏账号","太阳账号","游戏币","装备","其他","游戏礼包","商城道具","点券","祝福酒"],
     };
   },
   methods: {
@@ -140,9 +111,22 @@ div {
 }
 //背景图
 .my_img {
-  background: url("../../img/index_bg.png") no-repeat 0px -55px;
+  background: url("../../img/index/index_bg.png") no-repeat 0px -55px;
   display: inline-block;
   width: 25px;
   height: 29px;
+}
+.lists {
+  position: relative;
+}
+.options {
+  position: absolute;
+  top: 0px;
+  left: 240px;
+  border: 1px solid red;
+  width:500px;
+}
+.my_type{
+  display: inline-block;
 }
 </style>

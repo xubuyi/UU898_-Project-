@@ -4,7 +4,7 @@
     <ul class="my_nav">
       <!-- logo图片 -->
       <li>
-        <img src="../../img/nav-img.png" />
+        <img src="../../img//index/nav-img.png" />
       </li>
       <!-- 首页按钮 -->
       <li>
