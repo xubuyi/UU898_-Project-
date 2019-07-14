@@ -215,7 +215,7 @@ a {
   top: 50px;
   left: 0;
   z-index: 9999;
-  box-shadow: 0 0 2px #b9b9b9;
+  box-shadow: 0 0 1px #b9b9b9;
 }
 
 </style>
