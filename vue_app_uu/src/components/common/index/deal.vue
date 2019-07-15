@@ -1,6 +1,7 @@
 <template>
-  <div>
+  <div id="deal">
     <el-container>
+      <!-- 左侧 -->
       <div class="column-flex">
         <el-aside width="200px" class="wq-bg">
           <span class="tit">装备交易</span>
@@ -13,6 +14,7 @@
           <i class="el-icon-caret-right icon-r"></i>
         </el-aside>
       </div>
+      <!-- 右侧内容 -->
       <el-container>
         <!-- 头部 -->
         <el-header>
@@ -26,184 +28,185 @@
             <el-col :span="11">
               <div>出售物品描述</div>
             </el-col>
-            <el-col :span="4">
+            <el-col :span="3">
               <div>价格</div>
             </el-col>
-            <el-col :span="2">
+            <el-col :span="4">
               <div>成交时间</div>
             </el-col>
           </el-row>
         </el-header>
         <!-- 内容 -->
+        <!-- 装备 -->
         <el-main>
           <el-row :gutter="20">
             <el-col :span="2">
-              <div>1</div>
+              <span class="num-1 num">1</span>
             </el-col>
             <el-col :span="4">
               <div>上古世纪</div>
             </el-col>
             <el-col :span="11">
-              <div>【神赐巨匠烟波单手仗（现货）】神赐巨匠烟波单手仗（现货）</div>
+              <a href="javascript:;" target="_blank">【神赐巨匠烟波单手仗（现货）】神赐巨匠烟波单手仗（现货）</a>
             </el-col>
-            <el-col :span="4">
+            <el-col :span="3">
               <div>8000</div>
             </el-col>
-            <el-col :span="2">
-              <div>7月11号交易成功</div>
+            <el-col :span="4">
+              <div >7月11号交易成功</div>
             </el-col>
           </el-row>
           <el-row :gutter="20">
             <el-col :span="2">
-              <div>2</div>
+              <span class="num num-2">2</span>
             </el-col>
             <el-col :span="4">
               <div>梦幻诛仙2</div>
             </el-col>
             <el-col :span="11">
-              <div>【八卦兑换卡】八卦兑换卡★安全赔付，找回立刻赔★ </div>
+              <a href="javascript:;" target="_blank">【八卦兑换卡】八卦兑换卡★安全赔付，找回立刻赔★ </a>
             </el-col>
-            <el-col :span="4">
+            <el-col :span="3">
               <div>7100</div>
             </el-col>
-            <el-col :span="2">
-              <div>7月12号交易成功</div>
+            <el-col :span="4">
+              <div >7月12号交易成功</div>
             </el-col>
           </el-row>
           <el-row :gutter="20">
             <el-col :span="2">
-              <div>3</div>
+              <span class="num num-3">3</span>
             </el-col>
             <el-col :span="4">
               <div>第九大陆</div>
             </el-col>
             <el-col :span="11">
-              <div>【女神的信任顶级符文一套】顶级女神信任符文</div>
+              <a href="javascript:;" target="_blank">【女神的信任顶级符文一套】顶级女神信任符文</a>
             </el-col>
-            <el-col :span="4">
+            <el-col :span="3">
               <div>6666</div>
             </el-col>
-            <el-col :span="2">
-              <div>7月12号交易成功</div>
+            <el-col :span="4">
+              <div >7月12号交易成功</div>
             </el-col>
           </el-row>
           <el-row :gutter="20">
             <el-col :span="2">
-              <div>4</div>
+              <span class="num num-4">4</span>
             </el-col>
             <el-col :span="4">
               <div>梦幻诛仙2</div>
             </el-col>
             <el-col :span="11">
-              <div>【必成】必成★安全赔付，找回立刻赔★）</div>
+              <a href="javascript:;" target="_blank">【必成】必成★安全赔付，找回立刻赔★）</a>
             </el-col>
-            <el-col :span="4">
+            <el-col :span="3">
               <div>4700</div>
             </el-col>
-            <el-col :span="2">
-              <div>7月12号交易成功</div>
+            <el-col :span="4">
+              <div >7月12号交易成功</div>
             </el-col>
           </el-row>
           <el-row :gutter="20">
             <el-col :span="2">
-              <div>5</div>
+              <span class="num num-5">5</span>
             </el-col>
             <el-col :span="4">
               <div>上古世纪</div>
             </el-col>
             <el-col :span="11">
-              <div>【单手6阶咒力】38属性8个</div>
+              <a href="javascript:;" target="_blank">【单手6阶咒力】38属性8个</a>
             </el-col>
-            <el-col :span="4">
+            <el-col :span="3">
               <div>3360</div>
             </el-col>
-            <el-col :span="2">
-              <div>7月11号交易成功</div>
+            <el-col :span="4">
+              <div >7月11号交易成功</div>
             </el-col>
           </el-row>
           <el-row :gutter="20">
             <el-col :span="2">
-              <div>6</div>
+              <span class="num num-6">6</span>
             </el-col>
             <el-col :span="4">
               <div>上古世纪(台服)</div>
             </el-col>
             <el-col :span="11">
-              <div>【时装】太初+神赐各一件</div>
+              <a href="javascript:;" target="_blank">【时装】太初+神赐各一件</a>
             </el-col>
-            <el-col :span="4">
+            <el-col :span="3">
               <div>2599</div>
             </el-col>
-            <el-col :span="2">
-              <div>7月11号交易成功</div>
+            <el-col :span="4">
+              <div >7月11号交易成功</div>
             </el-col>
           </el-row>
           <el-row :gutter="20">
             <el-col :span="2">
-              <div>7</div>
+              <span class="num num-7">7</span>
             </el-col>
             <el-col :span="4">
               <div>诺亚传说</div>
             </el-col>
             <el-col :span="11">
-              <div>【11级劳尔】11级劳尔</div>
+              <a href="javascript:;" target="_blank">【11级劳尔】11级劳尔</a>
             </el-col>
-            <el-col :span="4">
+            <el-col :span="3">
               <div>2499</div>
             </el-col>
-            <el-col :span="2">
-              <div>7月12号交易成功</div>
+            <el-col :span="4">
+              <div >7月12号交易成功</div>
             </el-col>
           </el-row>
           <el-row :gutter="20">
             <el-col :span="2">
-              <div>8</div>
+              <span class="num num-8">8</span>
             </el-col>
             <el-col :span="4">
               <div>笑傲江湖OL</div>
             </el-col>
             <el-col :span="11">
-              <div>【如来第3章】如来第3章★安全赔付，找回立刻赔★</div>
+              <a href="javascript:;" target="_blank">【如来第3章】如来第3章★安全赔付，找回立刻赔★</a>
             </el-col>
-            <el-col :span="4">
+            <el-col :span="3">
               <div>2300</div>
             </el-col>
-            <el-col :span="2">
-              <div>7月10号交易成功</div>
+            <el-col :span="4">
+              <div >7月10号交易成功</div>
             </el-col>
           </el-row>
           <el-row :gutter="20">
             <el-col :span="2">
-              <div>1</div>
+              <span class="num num-9">9</span>
             </el-col>
             <el-col :span="4">
-              <div>上古世纪</div>
+              <div>梦幻诛仙2</div>
             </el-col>
             <el-col :span="11">
-              <div>【神赐巨匠烟波单手仗（现货）】神赐巨匠烟波单手仗（现货）</div>
+              <a href="javascript:;" target="_blank">【修为】修为★安全赔付，找回立刻赔★</a>
+            </el-col>
+            <el-col :span="3">
+              <div>2200</div>
             </el-col>
             <el-col :span="4">
-              <div>8000</div>
-            </el-col>
-            <el-col :span="2">
-              <div>7月11号交易成功</div>
+              <div >7月12号交易成功</div>
             </el-col>
           </el-row>
           <el-row :gutter="20">
             <el-col :span="2">
-              <div>1</div>
+              <span class="num num-10">10</span>
             </el-col>
             <el-col :span="4">
-              <div>上古世纪</div>
+              <div>诛仙3</div>
             </el-col>
             <el-col :span="11">
-              <div>【神赐巨匠烟波单手仗（现货）】神赐巨匠烟波单手仗（现货）</div>
+              <a href="javascript:;" target="_blank">【伤心花】281伤心花便宜大甩卖★安全赔付，找回立刻赔★</a>
+            </el-col>
+            <el-col :span="3">
+              <div>2150</div>
             </el-col>
             <el-col :span="4">
-              <div>8000</div>
-            </el-col>
-            <el-col :span="2">
-              <div>7月11号交易成功</div>
+              <div >7月10号交易成功</div>
             </el-col>
           </el-row>
         </el-main>
@@ -211,9 +214,65 @@
     </el-container>
     <br />
     <el-container>
-      <el-aside width="200px">Aside</el-aside>
+      <div class="column-flex">
+        <el-aside width="200px" class="card-nav">
+          <h2>点卡商城</h2>
+          <a href="javascript:;" class="hover">热门游戏</a>
+          <a href="javascript:;" class="hover">完美时空</a>
+          <a href="javascript:;" class="hover">网易</a>
+        </el-aside>
+      </div>
       <el-container>
-        <el-main>Main</el-main>
+        <el-main class="pa">
+          <div class="card-list-item">
+            <img src="../../../img/index/cardimg-53-37.png">
+            <span style="opacity: 1;">
+              剑侠情缘3
+              <em>￥49.70</em>
+            </span>
+            <a class="gm-btn" href="javascript:;" target="_blank">立即购买</a>
+          </div>
+          <div class="card-list-item">
+            <img src="../../../img/index/cardimg-53-37.png">
+            <span style="opacity: 1;">
+              剑侠情缘3
+              <em>￥49.70</em>
+            </span>
+            <a class="gm-btn" href="javascript:;" target="_blank">立即购买</a>
+          </div>
+          <div class="card-list-item">
+            <img src="../../../img/index/cardimg-53-37.png">
+            <span style="opacity: 1;">
+              剑侠情缘3
+              <em>￥49.70</em>
+            </span>
+            <a class="gm-btn" href="javascript:;" target="_blank">立即购买</a>
+          </div>
+          <div class="card-list-item">
+            <img src="../../../img/index/cardimg-53-37.png">
+            <span style="opacity: 1;">
+              剑侠情缘3
+              <em>￥49.70</em>
+            </span>
+            <a class="gm-btn" href="javascript:;" target="_blank">立即购买</a>
+          </div>
+          <div class="card-list-item">
+            <img src="../../../img/index/cardimg-53-37.png">
+            <span style="opacity: 1;">
+              剑侠情缘3
+              <em>￥49.70</em>
+            </span>
+            <a class="gm-btn" href="javascript:;" target="_blank">立即购买</a>
+          </div>
+          <div class="card-list-item">
+            <img src="../../../img/index/cardimg-53-37.png">
+            <span style="opacity: 1;">
+              剑侠情缘3
+              <em>￥49.70</em>
+            </span>
+            <a class="gm-btn" href="javascript:;" target="_blank">立即购买</a>
+          </div>
+        </el-main>
       </el-container>
     </el-container>
   </div>
@@ -228,6 +287,15 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+a{
+  text-decoration: none;
+  color: #333;
+}
+#deal{
+  width:1200px !important;
+  margin: auto;
+  // 此处与最终样式有区别需修改 background :#f5f5f5
+}
 .el-header {
   background-color: #b3c0d1;
   background-image: url("../../../img/index/colum-bg.jpg");
@@ -281,13 +349,15 @@ export default {
   top: 50%;
   font-size: 22px;
 }
-.el-container:nth-child(2) .el-aside {
-  line-height: 32px;
+.el-container:nth-child(3) .el-aside {
+  width: 210px;
+  height: 352px;
+  background: url("../../../img/index/card-bg.png") no-repeat -10px;
 }
 /* 侧边栏 end */
 
 .el-main {
-  background-color: #e9eef3;
+  background-color: #f3f3f3;
   color: #333;
   text-align: center;
   // line-height: 160px;
@@ -298,6 +368,109 @@ body > .el-container {
 }
 // 排行榜头部
 .el-row {
-  margin-bottom: 20px;
+  margin-bottom: 12px;
+}
+.el-main{
+  font: 13px/1.5 "微软雅黑";
+  color:#434343;
+  padding: 10px;
+}
+// el-main 列表
+.el-col .num{
+  display: block;
+  margin: auto;
+  width: 18px;
+  height: 21px;
+  color:#fff;
+}
+.el-col .num-1{
+  background:url("../../../img/index/index_bg.png") -57px -60px;
+}
+.el-col .num-2{
+  background:url("../../../img/index/index_bg.png") -77px -60px;
+}
+.el-col .num-3{
+  background:url("../../../img/index/index_bg.png") -96px -60px;
+}
+.el-col .num-4,.num-5,.num-6,.num-7,.num-8,.num-9,.num-10 {
+  background:url("../../../img/index/index_bg.png") -116px -60px;
+}
+.el-col a:hover{
+  color: #00b0ff !important;
+}
+.el-main .el-col.el-col-3{
+  color:#ff3a56;
+}
+.el-main .el-col.el-col-4{
+  color:#999;
+}
+// 点卡商城样式
+.card-nav h2{
+  color:#fff;
+  font-weight: normal;
+  font-size: 26px;
+  margin: 35px 0 30px 0;
+}
+.card-nav a{
+  display: inline-block;
+  width: 135px;
+  height: 35px;
+  line-height: 35px;
+  border: 1px solid #fff;
+  border-radius:3px;
+  margin: 10px auto;
+  color:#fff;
+  letter-spacing: 5px;
+  background: url("../../../img/index/bg-btn.png") repeat;
+}
+.card-nav a:hover{
+  background: #fff;
+  color:#ff850a;
+}
+.card-list-item{
+  width: 195px;
+  height: 175px;
+  border-right: 1px solid #cac8c8;
+  border-bottom: 1px solid #cac8c8;
+  float: left;
+  cursor: pointer;
+}
+// 因不能同行显示5个 修改padding
+.pa{
+  padding: 5px;
+}
+
+.card-list-item img{
+  margin-top: 14px;
+  box-shadow: 3px 2px 5px #ddd;
+  transition: transform .4s ease;
+}
+.card-list-item:hover img{
+  transform: translateY(5px);
+}
+.card-list-item span{
+  display: block;
+  margin-top: 17px;
+  opacity: 0 !important;
+}
+.card-list-item:hover span {
+  transform: translateY(5px);
+  opacity: 0;
+}
+em,i{font-style: normal;}
+.card-list-item span em{
+  display: block;
+  color: red;
+  font-weight: bold;
+}
+// 立即购买按钮
+.gm-btn{
+  display:inline-block;
+  width: 115px;height: 35px;
+  line-height: 35px;
+  background: #fff;
+  border: 1px solid #00b0ff;
+  color: #00b0ff !important;
+  border-radius: 3px;
 }
 </style>
