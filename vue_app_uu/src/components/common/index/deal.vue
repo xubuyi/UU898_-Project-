@@ -213,6 +213,7 @@
       </el-container>
     </el-container>
     <br />
+    <!-- 点卡商城 -->
     <el-container>
       <div class="column-flex">
         <el-aside width="200px" class="card-nav">
@@ -233,47 +234,64 @@
             <a class="gm-btn" href="javascript:;" target="_blank">立即购买</a>
           </div>
           <div class="card-list-item">
-            <img src="../../../img/index/cardimg-53-37.png">
+            <img src="../../../img/index/cardimg-20-28.png">
             <span style="opacity: 1;">
-              剑侠情缘3
-              <em>￥49.70</em>
+              传奇永恒
+              <em>￥98.00</em>
             </span>
             <a class="gm-btn" href="javascript:;" target="_blank">立即购买</a>
           </div>
           <div class="card-list-item">
-            <img src="../../../img/index/cardimg-53-37.png">
+            <img src="../../../img/index/cardimg-50-38.png">
             <span style="opacity: 1;">
-              剑侠情缘3
-              <em>￥49.70</em>
+              完美国际2
+              <em>￥100.00</em>
             </span>
             <a class="gm-btn" href="javascript:;" target="_blank">立即购买</a>
           </div>
           <div class="card-list-item">
-            <img src="../../../img/index/cardimg-53-37.png">
+            <img src="../../../img/index/cardimg-52-43.png">
             <span style="opacity: 1;">
-              剑侠情缘3
-              <em>￥49.70</em>
+              诛仙3
+              <em>￥100.00</em>
             </span>
             <a class="gm-btn" href="javascript:;" target="_blank">立即购买</a>
           </div>
           <div class="card-list-item">
-            <img src="../../../img/index/cardimg-53-37.png">
+            <img src="../../../img/index/cardimg-4-27.png">
             <span style="opacity: 1;">
-              剑侠情缘3
-              <em>￥49.70</em>
+              笑傲江湖OL
+              <em>￥100.00</em>
             </span>
             <a class="gm-btn" href="javascript:;" target="_blank">立即购买</a>
           </div>
           <div class="card-list-item">
-            <img src="../../../img/index/cardimg-53-37.png">
+            <img src="../../../img/index/cardimg-5-34.png">
             <span style="opacity: 1;">
-              剑侠情缘3
-              <em>￥49.70</em>
+              梦幻诛仙2
+              <em>￥100.00</em>
             </span>
             <a class="gm-btn" href="javascript:;" target="_blank">立即购买</a>
+          </div>
+          <div class="card-list-item">
+            <a href="JavaScript:;" target="_blank" class="more-a">更多游戏</a>
           </div>
         </el-main>
       </el-container>
+    </el-container>
+    <br>
+    <el-container>
+      <el-header class="link-tit">
+        友情链接
+      </el-header>
+      <el-main class="link-content">
+        <el-ul>
+          <el-li><a href="javascript:;">暗黑破坏神3</a></el-li>
+          <el-li><a href="javascript:;">17173视频</a></el-li>
+          <el-li><a href="javascript:;">华耀游戏</a></el-li>
+          <el-li><a href="javascript:;">8899捕鱼</a></el-li>
+        </el-ul>
+      </el-main>
     </el-container>
   </div>
 </template>
@@ -434,10 +452,11 @@ body > .el-container {
   border-bottom: 1px solid #cac8c8;
   float: left;
   cursor: pointer;
+  position:relative;
 }
 // 因不能同行显示5个 修改padding
 .pa{
-  padding: 5px;
+  padding: 2px;
 }
 
 .card-list-item img{
@@ -451,11 +470,11 @@ body > .el-container {
 .card-list-item span{
   display: block;
   margin-top: 17px;
-  opacity: 0 !important;
+  transition: transform .4s ease,opacity .4s ease;
 }
 .card-list-item:hover span {
   transform: translateY(5px);
-  opacity: 0;
+  opacity: 0 !important;
 }
 em,i{font-style: normal;}
 .card-list-item span em{
@@ -472,5 +491,37 @@ em,i{font-style: normal;}
   border: 1px solid #00b0ff;
   color: #00b0ff !important;
   border-radius: 3px;
+  position: absolute;
+  bottom: 18px;
+  left: 20%;
+  opacity:0;
+  transition: transform .4s ease,opacity .4s ease;
+}
+.card-list-item:hover .gm-btn {
+  transform: translateY(-10px);
+  opacity: 1;
+}
+.gm-btn:hover {
+  background: #00b0ff;
+  color: #fff !important;
+  display: block;
+}
+// 更多游戏样式
+.more-a{
+  display: block;
+  width:80px;
+  font-size:30px;
+  font-weight: 700;
+  line-height: 33px;
+  text-align: center;
+  margin: 55px auto 0 auto;
+  color: #c6c6c6 !important;
+}
+// 友情链接样式
+.link-tit{
+  text-align: left;
+  line-height: 48px;
+  padding-left: 50px;
+  background: url("../../../img/index/yqlj.png") no-repeat;
 }
 </style>
