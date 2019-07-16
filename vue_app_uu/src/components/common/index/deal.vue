@@ -53,7 +53,7 @@
               <div>8000</div>
             </el-col>
             <el-col :span="4">
-              <div >7月11号交易成功</div>
+              <div>7月11号交易成功</div>
             </el-col>
           </el-row>
           <el-row :gutter="20">
@@ -64,13 +64,13 @@
               <div>梦幻诛仙2</div>
             </el-col>
             <el-col :span="11">
-              <a href="javascript:;" target="_blank">【八卦兑换卡】八卦兑换卡★安全赔付，找回立刻赔★ </a>
+              <a href="javascript:;" target="_blank">【八卦兑换卡】八卦兑换卡★安全赔付，找回立刻赔★</a>
             </el-col>
             <el-col :span="3">
               <div>7100</div>
             </el-col>
             <el-col :span="4">
-              <div >7月12号交易成功</div>
+              <div>7月12号交易成功</div>
             </el-col>
           </el-row>
           <el-row :gutter="20">
@@ -87,7 +87,7 @@
               <div>6666</div>
             </el-col>
             <el-col :span="4">
-              <div >7月12号交易成功</div>
+              <div>7月12号交易成功</div>
             </el-col>
           </el-row>
           <el-row :gutter="20">
@@ -104,7 +104,7 @@
               <div>4700</div>
             </el-col>
             <el-col :span="4">
-              <div >7月12号交易成功</div>
+              <div>7月12号交易成功</div>
             </el-col>
           </el-row>
           <el-row :gutter="20">
@@ -121,7 +121,7 @@
               <div>3360</div>
             </el-col>
             <el-col :span="4">
-              <div >7月11号交易成功</div>
+              <div>7月11号交易成功</div>
             </el-col>
           </el-row>
           <el-row :gutter="20">
@@ -138,7 +138,7 @@
               <div>2599</div>
             </el-col>
             <el-col :span="4">
-              <div >7月11号交易成功</div>
+              <div>7月11号交易成功</div>
             </el-col>
           </el-row>
           <el-row :gutter="20">
@@ -155,7 +155,7 @@
               <div>2499</div>
             </el-col>
             <el-col :span="4">
-              <div >7月12号交易成功</div>
+              <div>7月12号交易成功</div>
             </el-col>
           </el-row>
           <el-row :gutter="20">
@@ -172,7 +172,7 @@
               <div>2300</div>
             </el-col>
             <el-col :span="4">
-              <div >7月10号交易成功</div>
+              <div>7月10号交易成功</div>
             </el-col>
           </el-row>
           <el-row :gutter="20">
@@ -189,7 +189,7 @@
               <div>2200</div>
             </el-col>
             <el-col :span="4">
-              <div >7月12号交易成功</div>
+              <div>7月12号交易成功</div>
             </el-col>
           </el-row>
           <el-row :gutter="20">
@@ -206,7 +206,7 @@
               <div>2150</div>
             </el-col>
             <el-col :span="4">
-              <div >7月10号交易成功</div>
+              <div>7月10号交易成功</div>
             </el-col>
           </el-row>
         </el-main>
@@ -218,80 +218,190 @@
       <div class="column-flex">
         <el-aside width="200px" class="card-nav">
           <h2>点卡商城</h2>
-          <a href="javascript:;" class="hover">热门游戏</a>
-          <a href="javascript:;" class="hover">完美时空</a>
-          <a href="javascript:;" class="hover">网易</a>
+          <a href="javascript:;" class="active">热门游戏</a>
+          <a href="javascript:;">完美时空</a>
+          <a href="javascript:;">网易</a>
         </el-aside>
       </div>
       <el-container>
         <el-main class="pa">
-          <div class="card-list-item">
-            <img src="../../../img/index/cardimg-53-37.png">
-            <span style="opacity: 1;">
-              剑侠情缘3
-              <em>￥49.70</em>
-            </span>
-            <a class="gm-btn" href="javascript:;" target="_blank">立即购买</a>
+          <div class="card-list clearfix">
+            <div class="card-list-item">
+              <img src="../../../img/index/cardimg-53-37.png" />
+              <span style="opacity: 1;">
+                剑侠情缘3
+                <em>￥49.70</em>
+              </span>
+              <a class="gm-btn" href="javascript:;" target="_blank">立即购买</a>
+            </div>
+            <div class="card-list-item">
+              <img src="../../../img/index/cardimg-20-28.png" />
+              <span style="opacity: 1;">
+                传奇永恒
+                <em>￥98.00</em>
+              </span>
+              <a class="gm-btn" href="javascript:;" target="_blank">立即购买</a>
+            </div>
+            <div class="card-list-item">
+              <img src="../../../img/index/cardimg-50-38.png" />
+              <span style="opacity: 1;">
+                完美国际2
+                <em>￥100.00</em>
+              </span>
+              <a class="gm-btn" href="javascript:;" target="_blank">立即购买</a>
+            </div>
+            <div class="card-list-item">
+              <img src="../../../img/index/cardimg-52-43.png" />
+              <span style="opacity: 1;">
+                诛仙3
+                <em>￥100.00</em>
+              </span>
+              <a class="gm-btn" href="javascript:;" target="_blank">立即购买</a>
+            </div>
+            <div class="card-list-item">
+              <img src="../../../img/index/cardimg-4-27.png" />
+              <span style="opacity: 1;">
+                笑傲江湖OL
+                <em>￥100.00</em>
+              </span>
+              <a class="gm-btn" href="javascript:;" target="_blank">立即购买</a>
+            </div>
+            <div class="card-list-item">
+              <img src="../../../img/index/cardimg-5-34.png" />
+              <span style="opacity: 1;">
+                梦幻诛仙2
+                <em>￥100.00</em>
+              </span>
+              <a class="gm-btn" href="javascript:;" target="_blank">立即购买</a>
+            </div>
+            <div class="card-list-item">
+              <a href="JavaScript:;" target="_blank" class="more-a">更多游戏</a>
+            </div>
           </div>
-          <div class="card-list-item">
-            <img src="../../../img/index/cardimg-20-28.png">
-            <span style="opacity: 1;">
-              传奇永恒
-              <em>￥98.00</em>
-            </span>
-            <a class="gm-btn" href="javascript:;" target="_blank">立即购买</a>
+          <div class="card-list clearfix">
+            <div class="card-list-item">
+              <img src="../../../img/index/cardimg-53-35.png" />
+              <span style="opacity: 1;">
+                无冬online
+                <em>￥100.00</em>
+              </span>
+              <a class="gm-btn" href="javascript:;" target="_blank">立即购买</a>
+            </div>
+            <div class="card-list-item">
+              <img src="../../../img/index/cardimg-6-20.png" />
+              <span style="opacity: 1;">
+                第三把剑
+                <em>￥100.00</em>
+              </span>
+              <a class="gm-btn" href="javascript:;" target="_blank">立即购买</a>
+            </div>
+            <div class="card-list-item">
+              <img src="../../../img/index/cardimg-7-37.png" />
+              <span style="opacity: 1;">
+                蜀山缥缈录
+                <em>￥100.00</em>
+              </span>
+              <a class="gm-btn" href="javascript:;" target="_blank">立即购买</a>
+            </div>
+            <div class="card-list-item">
+              <img src="../../../img/index/cardimg-4-27.png" />
+              <span style="opacity: 1;">
+                笑傲江湖OL
+                <em>￥100.00</em>
+              </span>
+              <a class="gm-btn" href="javascript:;" target="_blank">立即购买</a>
+            </div>
+            <div class="card-list-item">
+              <img src="../../../img/index/cardimg-6-56.png" />
+              <span style="opacity: 1;">
+                神雕侠侣
+                <em>￥100.00</em>
+              </span>
+              <a class="gm-btn" href="javascript:;" target="_blank">立即购买</a>
+            </div>
+            <div class="card-list-item">
+              <img src="../../../img/index/cardimg-54-22.png" />
+              <span style="opacity: 1;">
+                神魔大陆2
+                <em>￥100.00</em>
+              </span>
+              <a class="gm-btn" href="javascript:;" target="_blank">立即购买</a>
+            </div>
+            <div class="card-list-item">
+              <img src="../../../img/index/cardimg-52-43.png" />
+              <span style="opacity: 1;">
+                诛仙3
+                <em>￥100.00</em>
+              </span>
+              <a class="gm-btn" href="javascript:;" target="_blank">立即购买</a>
+            </div>
+            <div class="card-list-item">
+              <img src="../../../img/index/cardimg-50-38.png" />
+              <span style="opacity: 1;">
+                完美国际2
+                <em>￥100.00</em>
+              </span>
+              <a class="gm-btn" href="javascript:;" target="_blank">立即购买</a>
+            </div>
+            <div class="card-list-item">
+              <img src="../../../img/index/cardimg-5-34.png" />
+              <span style="opacity: 1;">
+                梦幻诛仙2
+                <em>￥100.00</em>
+              </span>
+              <a class="gm-btn" href="javascript:;" target="_blank">立即购买</a>
+            </div>
+            <div class="card-list-item">
+              <a href="JavaScript:;" target="_blank" class="more-a">更多游戏</a>
+            </div>
           </div>
-          <div class="card-list-item">
-            <img src="../../../img/index/cardimg-50-38.png">
-            <span style="opacity: 1;">
-              完美国际2
-              <em>￥100.00</em>
-            </span>
-            <a class="gm-btn" href="javascript:;" target="_blank">立即购买</a>
-          </div>
-          <div class="card-list-item">
-            <img src="../../../img/index/cardimg-52-43.png">
-            <span style="opacity: 1;">
-              诛仙3
-              <em>￥100.00</em>
-            </span>
-            <a class="gm-btn" href="javascript:;" target="_blank">立即购买</a>
-          </div>
-          <div class="card-list-item">
-            <img src="../../../img/index/cardimg-4-27.png">
-            <span style="opacity: 1;">
-              笑傲江湖OL
-              <em>￥100.00</em>
-            </span>
-            <a class="gm-btn" href="javascript:;" target="_blank">立即购买</a>
-          </div>
-          <div class="card-list-item">
-            <img src="../../../img/index/cardimg-5-34.png">
-            <span style="opacity: 1;">
-              梦幻诛仙2
-              <em>￥100.00</em>
-            </span>
-            <a class="gm-btn" href="javascript:;" target="_blank">立即购买</a>
-          </div>
-          <div class="card-list-item">
-            <a href="JavaScript:;" target="_blank" class="more-a">更多游戏</a>
+          <div class="card-list clearfix">
+            <div class="card-list-item">
+              <img src="../../../img/index/cardimg-18-32.png" />
+              <span style="opacity: 1;">
+                西楚霸王
+                <em>￥99.00</em>
+              </span>
+              <a class="gm-btn" href="javascript:;" target="_blank">立即购买</a>
+            </div>
+            <div class="card-list-item">
+              <img src="../../../img/index/cardimg-20-53.png" />
+              <span style="opacity: 1;">
+                逆水寒OL
+                <em>￥99.00</em>
+              </span>
+              <a class="gm-btn" href="javascript:;" target="_blank">立即购买</a>
+            </div>
+            <div class="card-list-item">
+              <a href="JavaScript:;" target="_blank" class="more-a">更多游戏</a>
+            </div>
           </div>
         </el-main>
       </el-container>
     </el-container>
-    <br>
+    <br />
     <el-container>
-      <el-header class="link-tit">
-        友情链接
-      </el-header>
+      <el-header class="link-tit">友情链接</el-header>
       <el-main class="link-content">
         <el-ul>
-          <el-li><a href="javascript:;">暗黑破坏神3</a></el-li>
-          <el-li><a href="javascript:;">17173视频</a></el-li>
-          <el-li><a href="javascript:;">华耀游戏</a></el-li>
-          <el-li><a href="javascript:;">8899捕鱼</a></el-li>
+          <el-li>
+            <a href="javascript:;">暗黑破坏神3</a>
+          </el-li>
+          <el-li>
+            <a href="javascript:;">17173视频</a>
+          </el-li>
+          <el-li>
+            <a href="javascript:;">华耀游戏</a>
+          </el-li>
+          <el-li>
+            <a href="javascript:;">8899捕鱼</a>
+          </el-li>
         </el-ul>
       </el-main>
+    </el-container>
+
+    <el-container>
+      <el-footer class="bz-bg"></el-footer>
     </el-container>
   </div>
 </template>
@@ -305,12 +415,18 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-a{
+a {
   text-decoration: none;
   color: #333;
 }
-#deal{
-  width:1200px !important;
+.clearfix::after,
+.clearfix::before {
+  content: "";
+  clear: both;
+  display: table;
+}
+#deal {
+  width: 1200px !important;
   margin: auto;
   // 此处与最终样式有区别需修改 background :#f5f5f5
 }
@@ -388,104 +504,115 @@ body > .el-container {
 .el-row {
   margin-bottom: 12px;
 }
-.el-main{
+.el-main {
   font: 13px/1.5 "微软雅黑";
-  color:#434343;
+  color: #434343;
   padding: 10px;
 }
 // el-main 列表
-.el-col .num{
+.el-col .num {
   display: block;
   margin: auto;
   width: 18px;
   height: 21px;
-  color:#fff;
+  color: #fff;
 }
-.el-col .num-1{
-  background:url("../../../img/index/index_bg.png") -57px -60px;
+.el-col .num-1 {
+  background: url("../../../img/index/index_bg.png") -57px -60px;
 }
-.el-col .num-2{
-  background:url("../../../img/index/index_bg.png") -77px -60px;
+.el-col .num-2 {
+  background: url("../../../img/index/index_bg.png") -77px -60px;
 }
-.el-col .num-3{
-  background:url("../../../img/index/index_bg.png") -96px -60px;
+.el-col .num-3 {
+  background: url("../../../img/index/index_bg.png") -96px -60px;
 }
-.el-col .num-4,.num-5,.num-6,.num-7,.num-8,.num-9,.num-10 {
-  background:url("../../../img/index/index_bg.png") -116px -60px;
+.el-col .num-4,
+.num-5,
+.num-6,
+.num-7,
+.num-8,
+.num-9,
+.num-10 {
+  background: url("../../../img/index/index_bg.png") -116px -60px;
 }
-.el-col a:hover{
-  color: #00b0ff !important;
+// .el-col a:hover{
+//   color: #00b0ff !important;
+// }
+.el-main .el-col.el-col-3 {
+  color: #ff3a56;
 }
-.el-main .el-col.el-col-3{
-  color:#ff3a56;
-}
-.el-main .el-col.el-col-4{
-  color:#999;
+.el-main .el-col.el-col-4 {
+  color: #999;
 }
 // 点卡商城样式
-.card-nav h2{
-  color:#fff;
+.card-nav h2 {
+  color: #fff;
   font-weight: normal;
   font-size: 26px;
   margin: 35px 0 30px 0;
 }
-.card-nav a{
+.card-nav a {
   display: inline-block;
   width: 135px;
   height: 35px;
   line-height: 35px;
   border: 1px solid #fff;
-  border-radius:3px;
+  border-radius: 3px;
   margin: 10px auto;
-  color:#fff;
+  color: #fff;
   letter-spacing: 5px;
   background: url("../../../img/index/bg-btn.png") repeat;
 }
-.card-nav a:hover{
+.card-nav a:hover,
+.card-nav .active {
   background: #fff;
-  color:#ff850a;
+  color: #ff850a;
 }
-.card-list-item{
+.card-list-item {
   width: 195px;
   height: 175px;
   border-right: 1px solid #cac8c8;
   border-bottom: 1px solid #cac8c8;
   float: left;
   cursor: pointer;
-  position:relative;
+  position: relative;
 }
 // 因不能同行显示5个 修改padding
-.pa{
+.pa {
   padding: 2px;
 }
 
-.card-list-item img{
+.card-list-item img {
   margin-top: 14px;
   box-shadow: 3px 2px 5px #ddd;
-  transition: transform .4s ease;
+  transition: transform 0.4s ease;
 }
-.card-list-item:hover img{
+.card-list-item:hover img {
   transform: translateY(5px);
 }
-.card-list-item span{
+.card-list-item span {
   display: block;
   margin-top: 17px;
-  transition: transform .4s ease,opacity .4s ease;
+  transition: transform 0.4s ease, opacity 0.4s ease;
 }
 .card-list-item:hover span {
   transform: translateY(5px);
   opacity: 0 !important;
 }
-em,i{font-style: normal;}
-.card-list-item span em{
+em,
+i {
+  font-style: normal;
+}
+.card-list-item span em {
   display: block;
   color: red;
   font-weight: bold;
 }
 // 立即购买按钮
-.gm-btn{
-  display:inline-block;
-  width: 115px;height: 35px;
+.gm-btn {
+  display: inline-block;
+  width: 115px;
+  height: 35px;
   line-height: 35px;
   background: #fff;
   border: 1px solid #00b0ff;
@@ -494,8 +621,8 @@ em,i{font-style: normal;}
   position: absolute;
   bottom: 18px;
   left: 20%;
-  opacity:0;
-  transition: transform .4s ease,opacity .4s ease;
+  opacity: 0;
+  transition: transform 0.4s ease, opacity 0.4s ease;
 }
 .card-list-item:hover .gm-btn {
   transform: translateY(-10px);
@@ -507,10 +634,10 @@ em,i{font-style: normal;}
   display: block;
 }
 // 更多游戏样式
-.more-a{
+.more-a {
   display: block;
-  width:80px;
-  font-size:30px;
+  width: 80px;
+  font-size: 30px;
   font-weight: 700;
   line-height: 33px;
   text-align: center;
@@ -518,10 +645,28 @@ em,i{font-style: normal;}
   color: #c6c6c6 !important;
 }
 // 友情链接样式
-.link-tit{
+.link-tit {
   text-align: left;
+  height: 48px !important;
   line-height: 48px;
   padding-left: 50px;
   background: url("../../../img/index/yqlj.png") no-repeat;
+}
+.link-content {
+  padding: 20px 0;
+  background: #fff;
+  margin-bottom: 20px;
+  border: 1px solid #efefef;
+}
+.link-content el-li {
+  float: left;
+  margin: 0 24px;
+}
+.el-footer.bz-bg {
+  height: 92px !important;
+  background: url("../../../img/index/jysx.png") no-repeat center center;
+}
+a:hover {
+  color: #00b0ff;
 }
 </style>
