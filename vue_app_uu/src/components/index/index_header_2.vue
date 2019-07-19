@@ -194,7 +194,7 @@
    }
 </script>
 // 
-<style lang="scss" scoped>
+<style scoped>
    body,div,p,ul,li{margin:0;padding:0}
    a{text-decoration: none;color:#666;}
    .pic{
@@ -283,7 +283,7 @@
    .top_2 div:last-child>ul:last-child li:not(:first-child) a:hover{
       color:#ffa63d;
    }
-   // 隐藏框的样式
+   
    .hide_1,.hide_2,.hide_3,.hide_4{
       width:1200px;
       border:2px solid #00bff0;
@@ -293,14 +293,6 @@
       background-color: white;
       display: none;
    }
-   // .hide_2{
-   //    width:1200px;
-   //    border:2px solid #00bff0;
-   //    margin:auto;
-   //    position:relative;
-   //    top:-30px;
-   //    background-color: white;
-   // }
    .hide_1.active,.hide_2.active,.hide_3.active,.hide_4.active{
       display: block;
    }
@@ -409,11 +401,6 @@
    .hide_content>div:last-child div.active{
       display: block;
    }
-   // .content{
-   //    display: flex;
-   //    justify-content: space-around;
-   //    flex-wrap: wrap;
-   // }
    .content li{
       float: left;
       width:106px;
