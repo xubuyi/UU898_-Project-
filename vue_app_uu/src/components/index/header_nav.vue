@@ -54,28 +54,39 @@ export default {
 
 <style lang="scss" scoped>
 // 11
-ul>li+li{
-  margin-top:20px 
+ul > li + li {
+  margin-top: 20px;
 }
 // ul横向显示,并取消前面点
 .my_nav {
   display: flex;
   list-style: none;
   padding-left: 10%;
+  padding: 0;
+  margin: 0;
+  height:56px
 }
 // 按钮样式
 .nav_style {
   border: none;
   width: 150px;
-  height: 36px;
+  // height: 36px;
   line-height: 10px;
-  color:#666;
-  font:16px "微软雅黑";
+  color: #666;
+  font: 16px "微软雅黑";
   padding-top: 8px;
 }
 // 修改hover背景色
 .nav_style:hover {
   background: #00b0ff;
   color: #fff;
+}
+//导航栏的间距
+.my_nav > li:first-child {
+  padding:0px 22px;
+}
+//导航栏的间距
+.my_nav > li:nth-child(2) {
+  padding-left: 10px;
 }
 </style>
