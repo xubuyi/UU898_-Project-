@@ -80,7 +80,7 @@
   }
 </script>
 
-<style lang="scss" scoped>
+<style scoped>
   body,div,p,ul,li{margin:0;padding:0}
   a{text-decoration: none;color:#666;}
   .pic{
