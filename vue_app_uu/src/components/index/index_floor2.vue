@@ -26,7 +26,7 @@
           </div>
           <div class="rt">
             <a href="javascript:;" target="_blank">更多游戏</a>
-            <span class="game-close-icon" title="关闭" >×</span>
+            <span class="game-close-icon" title="关闭" @click="chg">×</span>
           </div>
         </div>
         <div class="yxmc_rmyx">
@@ -198,7 +198,7 @@ export default {
       //4. 将option添加到myChart
       myChart.setOption(option);
     },
-    //选项卡点击显示隐藏
+    //选项卡点击显示隐藏//
     chg(e) {
       var id = e.target.dataset.id;
       //console.log(id)
