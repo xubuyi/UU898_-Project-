@@ -3,12 +3,12 @@
     <el-container>
       <!-- 左侧 -->
       <div class="column-flex" >
-        <el-aside width="200px"  class=" wq-bg " @click.native="aa">
+        <el-aside id="zb" width="200px"  class=" wq-bg " @click.native="zb">
           <span class="tit">装备交易</span>
           <span class="f_tit">成交排行榜</span>
           <i class="el-icon-caret-right icon-r"></i>
         </el-aside>
-        <el-aside width="200px" class="zh-bg">
+        <el-aside id="zh" width="200px" class="zh-bg rankhover" @click.native="zh">
           <span class="tit">账号交易</span>
           <span class="f_tit">成交排行榜</span>
           <i class="el-icon-caret-right icon-r"></i>
@@ -37,11 +37,10 @@
           </el-row>
         </el-header>
         <!-- 内容 -->
-
         <el-main class="pa">
           <!-- pa写有溢出隐藏 -->
           <!-- 装备 -->
-          <div style="margin:10px 0">
+          <div style="margin:10px 0" id="zb-context">
             <el-row :gutter="20">
               <el-col :span="2">
                 <span class="num-1 num">1</span>
@@ -214,7 +213,7 @@
             </el-row>
           </div>
           <!-- 账号 -->
-          <div style="margin:25px 0">
+          <div style="margin:25px 0" id="zh-context">
             <el-row :gutter="20">
               <el-col :span="2">
                 <span class="num-1 num">1</span>
@@ -592,14 +591,36 @@ export default {
     return {};
   },
   methods: {
-    aa(){
-      console.log("123")
+    zb(){
+       //console.log("123")
+      var zh= document.getElementById("zh");
+      var zhc= document.getElementById("zh-context");
+        //console.log(zh);
+      if(zh.classList.contains("rankhover")){
+        zh.classList.remove("rankhover");
+        zb.classList.add("rankhover");
+        zhc.classList.add("rank-context");
+      }
+    },
+    zh(){
+      var zb= document.getElementById("zb");
+      var zbc= document.getElementById("zb-context");
+      if(zb.classList.contains("rankhover")){
+        zb.classList.remove("rankhover");
+
+        zh.classList.add("rankhover");
+        zbc.classList.add("rank-context");
+      }
     }
   },
 };
 </script>
 
 <style lang="scss" scoped>
+.rank-context{
+  height:0;
+  transform: all .4s linear;
+}
 a {
   text-decoration: none;
   color: #333;
