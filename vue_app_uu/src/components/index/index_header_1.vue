@@ -82,6 +82,7 @@
 
 <style scoped>
   body,div,p,ul,li{margin:0;padding:0}
+  ul{list-style: none;}
   a{text-decoration: none;color:#666;}
   .pic{
     background: url("../../img/index/header.png") no-repeat; 

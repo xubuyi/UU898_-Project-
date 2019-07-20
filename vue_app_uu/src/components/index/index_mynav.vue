@@ -1,4 +1,5 @@
 <template>
+<div>
   <div class="my_nav">
     <navs></navs>
     <div class="f">
@@ -7,6 +8,8 @@
       <right class="my_right"></right>
     </div>
   </div>
+</div>
+  
 </template>
 
 <script>
@@ -36,6 +39,7 @@ export default {
   flex-direction: row;
 }
 .my_nav {
-  margin: 0 15%;
+  width:1200px;
+  margin: 0 auto;
 }
 </style>
