@@ -60,7 +60,7 @@
           </div>
         </li>
         <li><a href="#">我的订单</a><span class="pic"></span></li>
-        <li >
+        <li style="position:ralative">
           <span class="pic phone"></span>
           <a href="#"> 关注UU898</a>
           <span class="pic"></span>
