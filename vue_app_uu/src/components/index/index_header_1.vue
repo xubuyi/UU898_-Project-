@@ -60,7 +60,7 @@
           </div>
         </li>
         <li><a href="#">我的订单</a><span class="pic"></span></li>
-        <li >
+        <li class="erweima">
           <span class="pic phone"></span>
           <a href="#"> 关注UU898</a>
           <span class="pic"></span>
@@ -81,6 +81,9 @@
 </script>
 
 <style scoped>
+  .erweima{
+    position:relative;
+  }
   .zIndex{
      z-index:999;
   }
@@ -169,7 +172,7 @@
   }
   .code{
     position: absolute;
-    left:620px;
+    left:10px;
     width:100px;
     height:100px;
     display: none;
