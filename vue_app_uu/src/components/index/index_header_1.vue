@@ -12,7 +12,7 @@
           <a href="#">官方微博</a>
           <i class="pic"></i>
           <span class="pic"></span>
-          <div class="blog">
+          <div class="blog zIndex">
             <ul>
               <li><em class="pic sina"></em><a href="#">新浪微博</a></li>
               <li><em class="pic tx"></em><a href="#">腾讯微博</a></li>
@@ -23,7 +23,7 @@
           <a href="#">客服中心</a>
           <i class="pic"></i> 
           <span class="pic"></span>
-          <div class="kf_center">
+          <div class="kf_center zIndex">
             <ul>
               <li><a href="#">我要咨询</a></li>
               <li><a href="#">我要投诉</a></li>
@@ -41,7 +41,7 @@
           <a href="#">卖家中心</a>
           <i class="pic"></i> 
           <span class="pic"></span>
-          <div class="sale_center">
+          <div class="sale_center zIndex">
             <ul>
               <li><a href="#">出售中的商品</a></li>
               <li><a href="#">我要卖</a></li>
@@ -52,7 +52,7 @@
           <a href="#">买家中心</a>
           <i class="pic"></i>
           <span class="pic"></span>
-          <div class="buy_center">
+          <div class="buy_center zIndex">
             <ul>
               <li><a href="#">我购买的订单</a></li>
               <li><a href="#">我要买</a></li>
@@ -60,11 +60,11 @@
           </div>
         </li>
         <li><a href="#">我的订单</a><span class="pic"></span></li>
-        <li>
+        <li >
           <span class="pic phone"></span>
           <a href="#"> 关注UU898</a>
           <span class="pic"></span>
-          <div class="code">
+          <div class="code zIndex">
             <img src="../../img/index/uu898weixin.jpg" alt="">
           </div>
         </li> 
@@ -81,6 +81,9 @@
 </script>
 
 <style scoped>
+  .zIndex{
+     z-index:999;
+  }
   body,div,p,ul,li{margin:0;padding:0}
   ul{list-style: none;}
   a{text-decoration: none;color:#666;}
