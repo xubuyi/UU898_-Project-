@@ -5,13 +5,14 @@ const router = express.Router();
 //导入连接池
 const pool = require("../pool");
 //创建post接口
-router.post("/reg", (req, res) => {
+router.get("/reg", (req, res) => {
   //创建sql语句
-  var sql = "insert into uu_user_list values(null,?,?,?,?,?,?,?,?,?,?)";
+  var sql = "insert into uu_user_list values(null,?,md5(?),?,?,?,?,?,?,?,?)";
   //接收数据
-  var data = req.body();  
+  var data = req.query;  
+  // console.log(data)
   //连接数据库
-  pool.query(sql, data.uname, md5(data.upwd), data.upic, data.user_name,data.sex, data.tel, data.email, data.ID_card, data.bank_card, data.bank, (err, result) => {
+  pool.query(sql, [data.uname, data.upwd, data.upic, data.user_name,data.sex, data.tel, data.email, data.ID_card, data.bank_card, data.bank], (err, result) => {
     if (err) throw err;
     //判断影响的行数
     if (result.affectedRows > 0) {

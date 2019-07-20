@@ -1,7 +1,8 @@
 /* jshint esversion:6 */
 // 1 引入express模块
 const express=require("express");
-const UserRouter=require("./routers/register")
+const UserRouter=require("./routers/register");
+const games=require('./routers/games');
 // 2 创建web服务器
 var server=express();
 
@@ -22,8 +23,9 @@ server.use(session({
 }));
 
 //3 绑定监听端口 3000
-server.listen(3000);
+server.listen(3000,console.log('创建服务器'));
 
 // 5 挂载静态资源目录
 server.use(express.static("public"));
-server.use("/reg",UserRouter);
+server.use("",UserRouter);
+server.use("",games);
