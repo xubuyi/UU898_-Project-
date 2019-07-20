@@ -1,5 +1,5 @@
 <template>
-   <div>
+   <div class="container">
       <div class="top_2">
          <table></table>
          <div>
@@ -197,13 +197,18 @@
 <style scoped>
    body,div,p,ul,li{margin:0;padding:0}
    a{text-decoration: none;color:#666;}
+   ul{list-style: none;}
    .pic{
     background: url("../../img/index/header.png") no-repeat; 
+   }
+   .container{
+      width:100%;
    }
    .top_2{
       width:1200px;
       height:110px;
       margin:auto;
+      position: relative;
    }
    .top_2 div:nth-child(2){
       float: left;
@@ -288,10 +293,11 @@
       width:1200px;
       border:2px solid #00bff0;
       position: absolute;;
-      top:158px;
+      top:115px;
       left:81px;
       background-color: white;
       display: none;
+      z-index: 1000;
    }
    .hide_1.active,.hide_2.active,.hide_3.active,.hide_4.active{
       display: block;

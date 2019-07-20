@@ -1,6 +1,5 @@
 <template>
   <div class="container">
-    <h2>二楼内容</h2>
     <div class="floor2">
       <div class="f2_nav">
         <div class="lt">
@@ -324,6 +323,7 @@ a {
 /*内容样式区*/
 .container {
   width: 100%;
+  height:400px;
 }
 .container > div {
   width: 1200px;
