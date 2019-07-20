@@ -138,7 +138,7 @@
 <script>
 // 引入基本模板
 let echarts = require("echarts/lib/echarts");
-// 引入柱状图组件
+// 引入折线状图组件
 require("echarts/lib/chart/line");
 // 引入提示框和title组件
 require("echarts/lib/component/tooltip");
@@ -180,18 +180,77 @@ export default {
           x: "center",
           y: "10px",
           textStyle: {
-            color: "#666"
+            color: "#666",
+            fontSize: 16,
+            fontStyle: "normal",
+            fontFamily: "微软雅黑"
           }
         },
         xAxis: {
-          data: mlist
+          data: mlist,
+          axisTick: {
+            show: false
+          },
+          // x轴的颜色和宽度
+          axisLine: {
+            lineStyle: {
+              color: "#aaa",
+              width: 1.5 //这里是坐标轴的宽度,可以去掉
+            }
+          },
+          // x轴的字体样式
+          axisLabel: {
+            show: true,
+            textStyle: {
+              color: "#333",
+              fontSize: 12,
+              fontStyle: "normal",
+              fontWeight: 400,
+              fontFamily: "微软雅黑"
+            }
+          }
         },
-        yAxis: {},
+        yAxis: {
+          type: "value",
+          min: 56,
+          max: 60,
+          axisTick: {
+            show: false
+          },
+          axisLine: {
+            show: false
+          }
+        },
+        tooltip: {
+          trigger: "axis",
+          formatter: function(params) {
+            var relVal = params[0].name;
+            for (var i = 0, l = params.length; i < l; i++) {
+              relVal += "<br/>" + "每1元" + " = " + params[i].value + "万金";
+            }
+            return relVal;
+          },
+          backgroundColor: "transparent",
+          borderColor: "#00b0ff",
+          borderWidth: 1,
+          padding: 5,
+          textStyle: { color: "#00b0ff" }
+        },
         series: [
           {
             type: "line", //柱簇型
             data: slist,
-            smooth: true
+            smooth: true,
+            symbol: "circle", //折线点设置为实心点
+            symbolSize: 4, //折线点的大小
+            itemStyle: {
+              normal: {
+                color: "#00b0ff", //折线点的颜色
+                lineStyle: {
+                  color: "#00b0ff" //折线的颜色
+                }
+              }
+            }
           }
         ]
       };
