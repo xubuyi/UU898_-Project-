@@ -29,21 +29,29 @@ create table uu_game_list(
 	gid int primary key auto_increment,
 	game_name varchar(64),#游戏名称
 	game_spell varchar(4),#通过拼音搜索的标识
-	game_turnover int#交易的总数,通过这个来判断这个游戏是不是热门的
+	game_turnover int,#交易的总数,通过这个来判断这个游戏是不是热门的
+	game_company_name varchar(32)#公司名称,比如网易,腾讯,完美,盛大
 );
 
-INSERT INTO uu_game_list VALUES(null,"地下城与勇士","D","100");
-INSERT INTO uu_game_list VALUES(null,"剑灵","J","150");
-INSERT INTO uu_game_list VALUES(null,"英雄联盟","Y","300");
-INSERT INTO uu_game_list VALUES(null,"流放之路","L","80");
-INSERT INTO uu_game_list VALUES(null,"诛仙","Z","120");
-INSERT INTO uu_game_list VALUES(null,"天涯明月刀","T","215");
-INSERT INTO uu_game_list VALUES(null,"古剑奇谭","G","99");
-INSERT INTO uu_game_list VALUES(null,"传奇永恒","C","113");
-INSERT INTO uu_game_list VALUES(null,"笑傲江湖OL","X","119");
-INSERT INTO uu_game_list VALUES(null,"诺亚传说","N","50");
-INSERT INTO uu_game_list VALUES(null,"上古世纪","S","30");
-INSERT INTO uu_game_list VALUES(null,"APEX英雄","A","20");
+INSERT INTO uu_game_list VALUES(null,"地下城与勇士","D","100","腾讯");
+INSERT INTO uu_game_list VALUES(null,"剑灵","J","150","腾讯");
+INSERT INTO uu_game_list VALUES(null,"英雄联盟","Y","300","腾讯");
+INSERT INTO uu_game_list VALUES(null,"流放之路","L","80","腾讯");
+INSERT INTO uu_game_list VALUES(null,"诛仙","Z","120","完美");
+INSERT INTO uu_game_list VALUES(null,"天涯明月刀","T","215","腾讯");
+INSERT INTO uu_game_list VALUES(null,"古剑奇谭","G","99","腾讯");
+INSERT INTO uu_game_list VALUES(null,"传奇永恒","C","113","盛趣");
+INSERT INTO uu_game_list VALUES(null,"笑傲江湖OL","X","119","完美");
+INSERT INTO uu_game_list VALUES(null,"诺亚传说","N","50","尚游");
+INSERT INTO uu_game_list VALUES(null,"上古世纪","S","30","腾讯");
+INSERT INTO uu_game_list VALUES(null,"APEX英雄","A","20","steam");
+INSERT INTO uu_game_list VALUES(null,"无冬OL","W","20","完美");
+INSERT INTO uu_game_list VALUES(null,"第三把剑","D","20","完美");
+INSERT INTO uu_game_list VALUES(null,"蜀山缥缈录","S","20","完美");
+INSERT INTO uu_game_list VALUES(null,"神雕侠侣","S","20","完美");
+INSERT INTO uu_game_list VALUES(null,"神魔大陆","S","20","完美");
+INSERT INTO uu_game_list VALUES(null,"完美国际2","W","20","完美");
+INSERT INTO uu_game_list VALUES(null,"梦幻诛仙2","M","20","完美");
 
 #游戏交易类型表
 create table uu_game_type(
@@ -133,3 +141,26 @@ create table uu_game_deal_data(
 	gid int,#游戏编号,以此来判断是那个游戏的交易数据
 	game_type varchar(32)#游戏交易的类型,如账号,装备,游戏币等
 );
+
+#游戏点卡列表
+create table uu_games_avalist(
+	aid int primary key auto_increment,#游戏点卡编号
+	ava_price decimal(5,2),#点卡价格
+	ava_pic varchar(106),#点卡图片
+	gid int#游戏名称编号
+);
+
+INSERT INTO uu_games_avalist VALUES(null,"100","img/index/cardimg-4-27.png","1");
+INSERT INTO uu_games_avalist VALUES(null,"200","img/index/cardimg-4-27.png","1");
+INSERT INTO uu_games_avalist VALUES(null,"300","img/index/cardimg-4-27.png","1");
+INSERT INTO uu_games_avalist VALUES(null,"400","img/index/cardimg-4-27.png","1");
+INSERT INTO uu_games_avalist VALUES(null,"500","img/index/cardimg-4-27.png","1");
+INSERT INTO uu_games_avalist VALUES(null,"400","img/index/cardimg-4-27.png","1");
+INSERT INTO uu_games_avalist VALUES(null,"450","img/index/cardimg-4-27.png","1");
+INSERT INTO uu_games_avalist VALUES(null,"320","img/index/cardimg-4-27.png","1");
+INSERT INTO uu_games_avalist VALUES(null,"510","img/index/cardimg-4-27.png","1");
+INSERT INTO uu_games_avalist VALUES(null,"160","img/index/cardimg-4-27.png","1");
+INSERT INTO uu_games_avalist VALUES(null,"180","img/index/cardimg-4-27.png","1");
+INSERT INTO uu_games_avalist VALUES(null,"190","img/index/cardimg-4-27.png","1");
+INSERT INTO uu_games_avalist VALUES(null,"210","img/index/cardimg-4-27.png","1");
+INSERT INTO uu_games_avalist VALUES(null,"310","img/index/cardimg-4-27.png","1");

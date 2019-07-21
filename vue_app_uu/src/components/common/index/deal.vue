@@ -3,19 +3,19 @@
     <el-container>
       <!-- 左侧 -->
       <div class="column-flex" >
-        <el-aside id="zb" width="200px"  class=" wq-bg " @click.native="zb">
+        <el-aside id="zb" width="200px"  class=" wq-bg rankhover " @click.native="zb">
           <span class="tit">装备交易</span>
           <span class="f_tit">成交排行榜</span>
           <i class="el-icon-caret-right icon-r"></i>
         </el-aside>
-        <el-aside id="zh" width="200px" class="zh-bg rankhover" @click.native="zh">
+        <el-aside id="zh" width="200px" class="zh-bg " @click.native="zh">
           <span class="tit">账号交易</span>
           <span class="f_tit">成交排行榜</span>
           <i class="el-icon-caret-right icon-r"></i>
         </el-aside>
       </div>
       <!-- 右侧内容 -->
-      <el-container>
+      <el-container style="overflow:hidden">
         <!-- 头部 -->
         <el-header>
           <el-row :gutter="20">
@@ -40,7 +40,8 @@
         <el-main class="pa">
           <!-- pa写有溢出隐藏 -->
           <!-- 装备 -->
-          <div style="margin:10px 0" id="zb-context">
+          <div id="y">
+          <div style="margin:10px 0">
             <el-row :gutter="20">
               <el-col :span="2">
                 <span class="num-1 num">1</span>
@@ -213,7 +214,7 @@
             </el-row>
           </div>
           <!-- 账号 -->
-          <div style="margin:25px 0" id="zh-context">
+          <div style="margin:25px 0">
             <el-row :gutter="20">
               <el-col :span="2">
                 <span class="num-1 num">1</span>
@@ -387,6 +388,7 @@
                 <div>7月12号交易成功</div>
               </el-col>
             </el-row>
+          </div>
           </div>
         </el-main>
       </el-container>
@@ -594,22 +596,22 @@ export default {
     zb(){
        //console.log("123")
       var zh= document.getElementById("zh");
-      var zhc= document.getElementById("zh-context");
+      var y=document.getElementById("y");
         //console.log(zh);
       if(zh.classList.contains("rankhover")){
         zh.classList.remove("rankhover");
         zb.classList.add("rankhover");
-        zhc.classList.add("rank-context");
+        y.style.transform = "transLateY(0px)";
+        y.style.transition = "all .5s ease 0s";
       }
     },
     zh(){
       var zb= document.getElementById("zb");
-      var zbc= document.getElementById("zb-context");
       if(zb.classList.contains("rankhover")){
         zb.classList.remove("rankhover");
-
         zh.classList.add("rankhover");
-        zbc.classList.add("rank-context");
+        y.style.transform = "transLateY(-345px)";
+        y.style.transition = "all .5s ease 0s";
       }
     }
   },
@@ -617,10 +619,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.rank-context{
-  height:0;
-  transform: all .4s linear;
-}
 a {
   text-decoration: none;
   color: #333;
@@ -761,6 +759,15 @@ body > .el-container {
 .el-main .el-col.el-col-4 {
   color: #999;
 }
+
+// 出售物品描述文本溢出隐藏为"..."
+.el-col-11 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+// 交易 end
+
 // 点卡商城样式
 .card-nav h2 {
   color: #fff;
