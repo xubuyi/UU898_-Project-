@@ -9,7 +9,8 @@
         <div class="rt">
           <ul class="nav">
             <li class="nav-item txt" v-for="(el,i) of list1" :key="i" @click="chg" :data-id="did+i">
-              <a href="#">
+              <div class="cove"></div>
+              <a href="javascript:;">
                 <span>{{el}}</span>
                 <i class="i_pic"></i>
               </a>
@@ -25,11 +26,13 @@
           </div>
           <div class="rt">
             <a href="javascript:;" target="_blank">更多游戏</a>
-            <span class="game-close-icon" title="关闭" @click="chg">×</span>
+            <span data-id="gameselect0">
+              <span class="close" title="关闭" @click="chg">×</span>
+            </span>
           </div>
         </div>
         <div class="yxmc_rmyx">
-          <ul class="rmyx_list nav" id="topgames1">
+          <ul class="rmyx_list nav">
             <li class="nav-item" v-for="(el,i) of list2" :key="i">
               <a href="javascript:;" title="地下城与勇士" class="hotGameClr">
                 <img src="../../img/index/wym_05.jpg" alt="热门游戏列表" />
@@ -46,7 +49,9 @@
           </div>
           <div class="rt">
             <a href="javascript:;" target="_blank">更多游戏</a>
-            <span class="game-close-icon" title="关闭">×</span>
+            <span data-id="gameselect1">
+              <span class="close" title="关闭" @click="chg">×</span>
+            </span>
           </div>
         </div>
         <div class="yxmc_rmyx"></div>
@@ -58,7 +63,9 @@
           </div>
           <div class="rt">
             <a href="javascript:;" target="_blank">更多游戏</a>
-            <span class="game-close-icon" title="关闭">×</span>
+            <span data-id="gameselect2">
+              <span class="close" title="关闭" @click="chg">×</span>
+            </span>
           </div>
         </div>
         <div class="yxmc_rmyx"></div>
@@ -70,7 +77,9 @@
           </div>
           <div class="rt">
             <a href="javascript:;" target="_blank">更多游戏</a>
-            <span class="game-close-icon" title="关闭">×</span>
+            <span data-id="gameselect3">
+              <span class="close" title="关闭" @click="chg">×</span>
+            </span>
           </div>
         </div>
         <div class="yxmc_rmyx"></div>
@@ -85,7 +94,7 @@
             以下为
             <em>地下城与勇士/山东区/山东2／游戏币</em>最佳比例商品
           </span>
-          <a href="#">查看更多</a>
+          <a href="javascript:;">查看更多</a>
           <i class="i_pic"></i>
         </div>
         <div class="list_item">
@@ -93,42 +102,42 @@
           <span class="jy">【拍卖交易】392156.86元=26000000</span>
           <span class="bl">1元=66.3万金</span>
           <span class="cot">共1件</span>
-          <a class="show buy" href="#">立即购买</a>
+          <a class="show buy" href="javascript:;">立即购买</a>
         </div>
         <div class="list_item">
           <i class="i_pic1"></i>
           <span class="jy">【拍卖交易】551元=35000万金★手工</span>
           <span class="bl">1元=63.5209万金</span>
           <span class="cot">共1件</span>
-          <a class="show buy" href="#">立即购买</a>
+          <a class="show buy" href="javascript:;">立即购买</a>
         </div>
         <div class="list_item">
           <i class="i_pic1"></i>
           <span class="jy">【拍卖交易】798元=50000万金★手工</span>
           <span class="bl">1元=62.6566万金</span>
           <span class="cot">共1件</span>
-          <a class="show buy" href="#">立即购买</a>
+          <a class="show buy" href="javascript:;">立即购买</a>
         </div>
         <div class="list_item">
           <i class="i_pic1"></i>
           <span class="jy">【拍卖交易】243元=15000万金★手工</span>
           <span class="bl">1元=61.7284万金</span>
           <span class="cot">共1件</span>
-          <a class="show buy" href="#">立即购买</a>
+          <a class="show buy" href="javascript:;">立即购买</a>
         </div>
         <div class="list_item">
           <i class="i_pic1"></i>
           <span class="jy">【拍卖交易】278元=17000万金★手工</span>
           <span class="bl">1元=61.1511万金</span>
           <span class="cot">共1件</span>
-          <a class="show buy" href="#">立即购买</a>
+          <a class="show buy" href="javascript:;">立即购买</a>
         </div>
         <div class="list_item">
           <i class="i_pic1"></i>
           <span class="jy">【拍卖交易】423元=25001.63万金★手</span>
           <span class="bl">1元=59.1055万金</span>
           <span class="cot">共1件</span>
-          <a class="show buy" href="#">立即购买</a>
+          <a class="show buy" href="javascript:;">立即购买</a>
         </div>
       </div>
     </div>
@@ -216,6 +225,13 @@ export default {
           axisTick: {
             show: false
           },
+          splitLine: {
+            //网格线
+            lineStyle: {
+              type: "dotted" //设置网格线类型 dotted：虚线   solid:实线
+            },
+            show: true //隐藏或显示
+          },
           axisLine: {
             show: false
           }
@@ -233,7 +249,10 @@ export default {
           borderColor: "#00b0ff",
           borderWidth: 1,
           padding: 5,
-          textStyle: { color: "#00b0ff" }
+          textStyle: { color: "#00b0ff" },
+          position: function(p) {//提示框位置
+            return [p[0]-0,p[1]-50];
+          }
         },
         series: [
           {
@@ -258,10 +277,13 @@ export default {
     },
     //选项卡点击显示隐藏//
     chg(e) {
-      var id = e.target.dataset.id;
-      //console.log(id)
+      var id = e.target.parentElement.dataset.id;
       var dv = document.getElementById(id);
+      var ds = document.getElementsByClassName("yxmc");
       if (dv.classList.contains("on")) {
+        for (var i = 0; i < ds.length; i++) {
+          ds[i].classList.add("on");
+        }
         dv.classList.remove("on");
       } else {
         dv.classList.add("on");
@@ -323,7 +345,7 @@ a {
 /*内容样式区*/
 .container {
   width: 100%;
-  height:400px;
+  height: 400px;
 }
 .container > div {
   width: 1200px;
@@ -370,12 +392,18 @@ a {
 }
 .container .floor2 .f2_nav .rt .nav .txt {
   display: inline-block;
+  position: relative;
   background-color: #fff;
   margin-right: 10px;
   width: 145px;
   height: 27px;
   line-height: 27px;
   cursor: pointer;
+}
+.container .floor2 .f2_nav .rt .nav .txt .cove {
+  position: absolute;
+  width: 145px;
+  height: 30px;
 }
 /*搜索框小图标样式*/
 .container .floor2 .f2_nav .rt .nav .txt i {
@@ -402,10 +430,11 @@ a {
 /*选项样式*/
 .floor2 .yxmc {
   width: 1196px;
-  height: 81px;
   border: 2px solid #00b0ff;
+  border-bottom: 0;
   background: #fff;
   position: absolute;
+  border: 2px solid #00b0ff;
   top: 50px;
   left: 0;
   z-index: 9999;
@@ -448,6 +477,20 @@ a {
   font-size: 20px;
   cursor: pointer;
   color: #888;
+}
+.floor2 .yxmc .yxmc_rmyx {
+  width: 98%;
+  margin: 0 auto;
+  height: 45px;
+  /* border-bottom: 2px solid #00b0ff; */
+}
+.floor2 .yxmc .yxmc_rmyx .rmyx_list {
+  width: 100%;
+  padding: 10px 10px 10px 0;
+  line-height: 45px;
+}
+.floor2 .yxmc .yxmc_rmyx .rmyx_list li {
+  display: inline-block;
 }
 .container .f2_cont .cahrt {
   width: 565px;
