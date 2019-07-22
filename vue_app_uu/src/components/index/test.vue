@@ -12,7 +12,7 @@
     <!-- {{$store.state.list}}  -->
     <!-- {{list}} -->
     <!-- {{ $store.state.list.list}} -->
-    {{datas.list}}
+    {{list}}
   </div>
 </template>
 
@@ -20,13 +20,15 @@
   export default {
     data() {
       return {
-        datas:{}
+        list:{}
       }
     },
     created() {
       this.$store.dispatch('getdata');
       // this.list=$store.state.list
-      this.datas=this.$store.state.list
+      this.list=this.$store.state.list.list
+      console.log(this.list)
+      //4
     },
     // computed: {
     //   data(){
