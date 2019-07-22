@@ -12,6 +12,7 @@ import header_nav from './components/index/header_nav.vue';
 import index_footer from "./components/index/index_footer.vue";
 import index_together from "./components/index/index_together.vue";
 import index_mynav from "./components/index/index_mynav.vue";
+import test from "./components/index/test.vue";
 
 
 Vue.use(Router);
@@ -27,6 +28,7 @@ export default new Router({
 		// {path:"/index_header_2",component:index_header_2},
 		// {path: '/index_floor2',component:index_floor2},
     {path: '/',component:index_together},
+    {path: '/test',component:test},
 		// {path:"/deal",component:deal},
     {path: '/about',name: 'about',component: () => import(/* webpackChunkName: "about" */ './views/About.vue')
     }

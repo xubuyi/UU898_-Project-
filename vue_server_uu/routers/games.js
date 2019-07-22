@@ -23,14 +23,16 @@ router.get("/games", (req, res) => {
     if (list.length > 0) {
       //把list的数据给obj
       obj.list = list;
-      //查询type表格
+      //查询游戏建议类型表格
       pool.query("SELECT * FROM uu_game_type", (err, type) => {
         if (type.length > 0) {
           //把type赋给obj
           obj.type = type;
+          //查询游戏服务器表
           pool.query("select * from uu_game_server", (err, server) => {
             if (server.length > 0) {
               obj.server = server;
+              //查询游戏大区表
               pool.query("select * from uu_game_area", (err, area) => {
                 if (area.length > 0) {
                   obj.area = area;
@@ -42,16 +44,21 @@ router.get("/games", (req, res) => {
           })
         }
       })
-      // res.send({
-      //   code: 1,
-      //   msg: result,
-
-      // })
     } else {
       res.send({
         code: -1,
         msg: "查询失败"
       })
+    }
+  })
+})
+router.get("/ava", (req, res) =>{
+  pool.query("select * from uu_games_avalist",(err,result)=>{
+    if(result.length>0){
+      console.log(result)
+      res.send(result);
+    }else{
+      console.log("查询失败")
     }
   })
 })
