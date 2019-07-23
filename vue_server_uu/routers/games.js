@@ -9,7 +9,7 @@ router.get("/games", (req, res) => {
   //创建sql语句
   // var sql = "SELECT gid,game_name,game_spell,game_turnover FROM `uu_game_list` ORDER BY game_turnover DESC";
   //查询list表
-  var sql = "SELECT * FROM uu_game_list";
+  var sql = "SELECT * FROM uu_game_list ORDER by `game_turnover` DESC ";
   //接收要发送的数据
   var obj = {};
   //接收数据
