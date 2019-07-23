@@ -11,8 +11,7 @@
     {{$store.state.list.server}}-->
     <!-- {{$store.state.list}}  -->
     <!-- {{list}} -->
-    <!-- {{ $store.state.list.list}} -->
-    {{list}}
+    {{ lists }}
   </div>
 </template>
 
@@ -20,21 +19,26 @@
   export default {
     data() {
       return {
-        list:{}
+        lists:{}
       }
     },
     created() {
-      this.$store.dispatch('getdata');
-      // this.list=$store.state.list
-      this.list=this.$store.state.list.list
-      console.log(this.list)
-      //4
+    
+      //  console.log(this.$store.state.list)
+      // this.lists=this.$store.state.list
+      // console.log(this.lists);
+      // // console.log(this.$store.getters.getdata);
+      // // this.$store.getters.getdata
+      // console.log(this.lists)
+      // //4
     },
-    // computed: {
-    //   data(){
-    //     return $store.state.list;
-    //   }
-    // },
+    mounted() {
+        this.$store.dispatch('getdata');
+      setTimeout(()=>{
+      this.lists=this.$store.state.list;
+      console.log(this.$store.state.list);
+      },0)
+    }
   }
 </script>
 

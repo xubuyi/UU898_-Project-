@@ -10,13 +10,14 @@ export default new Vuex.Store({
   },
   mutations: {
     getdata(state,res){
-      state.list=res.data;
+      // console.log(res);
+      state.list=res;
     }
   },
   actions: {
     getdata(data){
       axios.get("games").then(res=>{
-        data.commit("getdata",res)
+        data.commit("getdata",res.data)
       })
     }
   }
