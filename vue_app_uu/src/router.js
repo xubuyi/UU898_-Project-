@@ -29,7 +29,7 @@ export default new Router({
 		// {path: '/index_floor2',component:index_floor2},
     {path: '/',component:index_together},
     {path: '/test',component:test},
-		// {path:"/deal",component:deal},
+		{path:"/deal",component:deal},
     {path: '/about',name: 'about',component: () => import(/* webpackChunkName: "about" */ './views/About.vue')
     }
   ]

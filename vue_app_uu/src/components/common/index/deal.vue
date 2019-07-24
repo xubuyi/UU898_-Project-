@@ -410,11 +410,11 @@
         <el-main class="pa">
           <div id="main">
             <div class="card-list clearfix">
-              <div class="card-list-item">
-                <img src="../../../img/index/cardimg-53-37.png" />
+              <div class="card-list-item" v-for="(item, index) of list" :key="index">
+                <img :src="'http://127.0.0.1:3000/'+item.ava_pic" />
                 <span style="opacity: 1;">
                   剑侠情缘3
-                  <em>￥49.70</em>
+                  <em>￥{{item.ava_price}}</em>
                 </span>
                 <a class="gm-btn" href="javascript:;" target="_blank">立即购买</a>
               </div>
@@ -594,7 +594,9 @@
 <script>
 export default {
   data() {
-    return {};
+    return {
+      list: []
+    };
   },
   methods: {
     // 排行榜
@@ -627,9 +629,9 @@ export default {
       //console.log(b);
       var id_ = act.dataset.id;
       //console.log(id_)
-      var main=document.getElementById("main")
-      main.style.marginTop=-id_*356+"px";
-      main.style.transition="all 0.5s linear";
+      var main = document.getElementById("main");
+      main.style.marginTop = -id_ * 356 + "px";
+      main.style.transition = "all 0.5s linear";
       if (!act.classList.contains("active")) {
         for (var i = 0; i < b.length; i++) {
           console.log(b[i]);
@@ -638,6 +640,13 @@ export default {
         act.classList.add("active");
       }
     }
+  },
+  created() {
+    /*       this.axios.get("/ava").then((res,err)=>{
+         if(err) throw err;
+         this.list=res.data
+          }
+      ) */
   }
 };
 </script>
