@@ -45,6 +45,7 @@ export default {
       } else if (this.show_one) {
         this.show_one = true;
         this.show_two = false;
+        //11
       }
     }
   }
