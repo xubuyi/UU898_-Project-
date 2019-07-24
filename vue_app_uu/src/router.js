@@ -13,7 +13,8 @@ import index_footer from "./components/index/index_footer.vue";
 import index_together from "./components/index/index_together.vue";
 import index_mynav from "./components/index/index_mynav.vue";
 import test from "./components/index/test.vue";
-import login_header from "./components/login/login_header.vue"
+import login_header from "./components/login/login_header.vue";
+import login_reg from "./components/login/login_reg.vue"
 
 Vue.use(Router);
 
@@ -30,6 +31,7 @@ export default new Router({
     {path: '/',component:index_together},
     // {path: '/test',component:test},
     {path: '/login_header',component:login_header},
+    {path: '/login_reg',component:login_reg},
 		// {path:"/deal",component:deal},
     {path: '/about',name: 'about',component: () => import(/* webpackChunkName: "about" */ './views/About.vue')
     }
